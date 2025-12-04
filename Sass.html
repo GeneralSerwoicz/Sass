@@ -1,0 +1,90 @@
+<!DOCTYPE html // W3C XHTML 1.0 Strict//EN "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="https://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Creator : @SassCopenhagen">
+    <meta name="description" content="My Portfolio Morden">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title id="Animactiontitle">Portfolio Morden</title>
+    <link rel="shortcut icon" href="Assets/Icons/icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="Assets/Theme/tempelate.css">
+</head>
+
+<body>
+</body>
+<div class="Video-background">
+    <video autoplay muted loop id="myVideo">
+        <source src="Assets/Video Background/OG.mp4" type="video/mp4">
+    </video>
+    <div class="Sound-Background">
+        <audio autoplay loop>
+            <source src="Assets/Sound Background/sound.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+</div>
+<div class="card-main">
+    <div class="card-banner">
+        <p class="name">SassCopenhagen<span class="Version">3.5.4v</span></p>
+    </div>
+    <div class="card-content">
+        <p class="description">Welcome to my portfolio website! I'm SassCopenhagen, a passionate developer and
+            designer dedicated to creating stunning and functional digital experiences. Explore my projects, skills,
+            and get in touch to collaborate on exciting ventures!</p>
+        <nav class="navbar-center">
+            <a href="Sass.html" class="nav-link">About Me</a>
+            <a href="Projects.html" class="nav-link">Projects</a>
+            <a href="Tools.html" class="nav-link">Tools</a>
+            <a href="#" class="nav-link">Discord</a>
+        </nav>
+        <div class="Social-media">
+            <a href="#" class="social-link">Twitter</a>
+            <a href="#" class="social-link">LinkedIn</a>
+            <a href="#" class="social-link">GitHub</a>
+            <a href="#" class="social-link">Instagram</a>
+        </div>
+        <div class="lang-programing">
+            <span class="lang-item">HTML</span>
+            <span class="lang-item">CSS</span>
+            <span class="lang-item">JavaScript</span>
+            <span class="lang-item">Python</span>
+            <span class="lang-item">Java</span>
+            <span class="lang-item">C#</span>
+            <span class="lang-item">Ruby</span>
+            <span class="lang-item">PHP</span>
+            <span class="lang-item">Swift</span>
+            <span class="lang-item">Kotlin</span>
+            <span class="lang-item">TypeScript</span>
+            <span class="lang-item">Go</span>
+            <span class="lang-item">Rust</span>
+            <span class="lang-item">Dart</span>
+            <span class="lang-item">SQL</span>
+            <span class="lang-item">NoSQL</span>
+            <span class="lang-etc">and more...</span>
+        </div>
+        <div class="program-tool">
+            <span class="tool-item">Vscode</span>
+            <span class="tool-item">Vs</span>
+            <span class="tool-item">Xcode</span>
+            <span class="tool-item">PyCharm</span>
+        </div>
+    </div>
+</div>
+<footer>
+    <p class="footer-text">© 2025 SassCopenhagen. All rights reserved.</p>
+</footer>
+<script>
+    const title = "S.A.S.S.C.O.P.E.N.H.A.G.E.N";
+    const titleLength = title.length;
+    let index = 0;
+
+    function animateTitle() {
+        document.getElementById("Animactiontitle").innerText = title.substring(0, index + 1);
+        index = (index + 1) % title.length;
+    }
+
+    setInterval(animateTitle, 700);
+</script>
+
+</html>
